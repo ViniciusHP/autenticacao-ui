@@ -1,0 +1,83 @@
+<div class="p-3 flex h-full w-full justify-content-center align-items-center">
+  <vhp-form-card @fadeAndSlide>
+    <ng-template #illustrationTemplate>
+      <div
+        class="w-full flex flex-column justify-content-between align-items-center"
+      >
+        <div
+          class="w-full flex justify-content-center align-content-center flex-column text-center"
+        >
+          <p class="text-2xl mb-3 font-bold text-left">
+            {{ "Redefinição de senha" | translate }}
+          </p>
+          <p class="text-lg text-left">
+            {{
+              "Ao redefinir sua senha, guarde-a em um lugar seguro e não compartilhe com outras pessoas."
+                | translate
+            }}
+          </p>
+        </div>
+        <div class="w-full">
+          <img
+            class="w-full h-full"
+            src="assets/illustrations/password-change.svg"
+            [alt]="'redefinir_senha.illustrations.seguranca_senha' | translate"
+          />
+        </div>
+      </div>
+    </ng-template>
+    <ng-template #formTemplate>
+      <form
+        class="grid grid-nogutter"
+        [formGroup]="formGroup"
+        (ngSubmit)="redefinirSenha()"
+      >
+        <div class="col-12 mb-3">
+          <p class="text-2xl font-bold">
+            {{ "Redefinição de senha" | translate }}
+          </p>
+          <p class="mt-2 text-sm">
+            {{
+              "Insira uma nova senha que será utilizada para acessar sua conta."
+                | translate
+            }}
+          </p>
+        </div>
+
+        <div class="col-12">
+          <vhp-input-password
+            label="common.fields.senha.label"
+            [feedback]="true"
+            [validations]="validationMessages['password']"
+            formControlName="password"
+          ></vhp-input-password>
+        </div>
+
+        <div class="col-12">
+          <vhp-input-password
+            label="common.fields.confirmar_senha.label"
+            [validations]="validationMessages['confirmPassword']"
+            formControlName="confirmPassword"
+          ></vhp-input-password>
+        </div>
+
+        <div class="col-12">
+          <button
+            class="text-light mt-4 p-button-sm p-button-rounded w-full flex justify-content-center text-md"
+            type="submit"
+            pButton
+            pRipple
+            [disabled]="isFormInvalid || isLoading"
+          >
+            <span *ngIf="!isLoading; else spinner">{{
+              "Redefinir" | translate
+            }}</span>
+            <ng-template #spinner>
+              <i class="pi pi-spin pi-spinner"></i>
+            </ng-template>
+          </button>
+        </div>
+      </form>
+    </ng-template>
+  </vhp-form-card>
+</div>

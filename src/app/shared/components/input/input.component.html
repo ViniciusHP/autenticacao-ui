@@ -1,0 +1,29 @@
+<div class="mt-4 p-float-label w-full" [ngClass]="wrapperClasses">
+  <input
+    #inputField
+    [ngClass]="classes"
+    [attr.aria-describedby]="uniqueId"
+    class="p-inputtext-sm w-full"
+    [id]="uniqueId"
+    [type]="type"
+    pInputText
+    [value]="value"
+    (input)="valueChanges(inputField.value)"
+  />
+  <i
+    *ngIf="prefixIcon"
+    class="icone-prefixo-campo text-md"
+    [ngClass]="prefixIcon"
+  ></i>
+  <i
+    *ngIf="sufixIcon"
+    class="icone-sufixo-campo text-md"
+    [ngClass]="sufixIcon"
+  ></i>
+
+  <label [for]="uniqueId">{{ label | translate }}</label>
+</div>
+<vhp-error-message-field
+  [field]="field"
+  [messages]="validations"
+></vhp-error-message-field>

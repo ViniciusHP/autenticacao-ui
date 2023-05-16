@@ -1,0 +1,131 @@
+{
+  "cadastro_usuario": {
+    "labels": {
+      "cadastrar": "Register",
+      "registro_novo_usuario": "New user registration",
+      "voltar": "Back"
+    },
+    "descriptions": {
+      "criar_conta": "Create your account",
+      "erro_cadastro_usuario": "Error registering user!",
+      "preencher_campos": "Fill in the fields below to create an account.",
+      "se_registre_em_nosso_site": "Register on our website to enjoy all the features.",
+      "usuario_cadastrado_com_sucesso": "User successfully registered!"
+    },
+    "illustrations": {
+      "perfil_usuario": "Illustration of user displaying their profile."
+    }
+  },
+  "common": {
+    "fields": {
+      "email": {
+        "label": "Email",
+        "validations": {
+          "required": "Enter your email to log into your account.",
+          "email": "Enter a valid email.",
+          "emailDisponivel": "The email provided is not available."
+        }
+      },
+      "senha": {
+        "label": "Password",
+        "prompt": "Enter a password",
+        "weight": {
+          "weak": "Weak password.",
+          "medium": "Medium password.",
+          "strong": "Strong password."
+        },
+        "validations": {
+          "required": "Enter your password."
+        }
+      },
+      "nome": {
+        "label": "Username",
+        "validations": {
+          "required": "Enter your username."
+        }
+      },
+      "confirmar_senha": {
+        "label": "Confirm password",
+        "validations": {
+          "required": "Confirm your password.",
+          "confirmacaoSenha": "Confirmation of password different from the entered password."
+        }
+      }
+    }
+  },
+  "footer": {
+    "descriptions": {
+      "desenvolvido_por": "Developed by"
+    }
+  },
+  "home": {
+    "labels": {
+      "sair": "Logout"
+    },
+    "descriptions": {
+      "seja_bem_vindo": "Welcome {{usuario}}!",
+      "ocorreu_erro_deslogar": "An error occurred while logging out"
+    },
+    "illustrations": {
+      "bem_vindo": "Illustration person playing guitar in camp, with mountains on the horizon and starry sky"
+    }
+  },
+  "login": {
+    "labels": {
+      "cadastre_se": "Create an account!",
+      "entrar": "Sign in",
+      "form_title": "Hello, welcome!",
+      "illustration_title": "Login",
+      "login_efetuado": "Login done"
+    },
+    "descriptions": {
+      "bem_vindo_usuario": "Welcome {{usuario}}",
+      "esqueceu_senha": "Forgot password?",
+      "form_description": "Log in to your account below",
+      "illustration_description": "Track your financial rhythm in real time from anywhere.",
+      "nao_possui_conta": "Not registred?",
+      "ocorreu_erro_login": "An error occurred while logging in.",
+      "usuario_senha_invalidos": "Invalid username and/or password!"
+    },
+    "illustrations": {
+      "carteira": "Illustration of a customer visualizing their finances in the form of graphs, with a calculator and documents on the side."
+    }
+  },
+  "pagina_nao_encontrada": {
+    "labels": {
+      "pagina_inicial": "Home page"
+    },
+    "descriptions": {
+      "pagina_nao_existe": "The page you tried to access does not exist!",
+      "retorne_para_pagina_inicial": "Please return to the homepage."
+    },
+    "illustrations": {
+      "nao_encontrado": "Illustration of a lost man with a sign that says 404"
+    }
+  },
+  "recuperar_senha": {
+    "labels": {
+      "recuperacao_senha": "Password recovery",
+      "solicitacao_recuperacao_senha": "Password recovery request"
+    },
+    "descriptions": {
+      "email_recuperacao_enviado": "An email with password recovery instructions will be sent to {{email}}.",
+      "instrucoes_solicitacao_recuperacao_senha": "To request password recovery, you must inform us of the registered email so that we can send you a password recovery email.",
+      "nao_foi_possivel_solicitar_recuperacao_senha": "Could not request password recovery, please try again later.",
+      "nunca_pediremos_sua_senha": "We will never contact you asking for your password, never share your password."
+    },
+    "illustrations": {
+      "preencher_formulario": "Illustration of customer filling out form."
+    }
+  },
+  "redefinir_senha": {
+    "labels": {},
+    "descriptions": {
+      "nao_foi_possivel_redefinir_senha": "Unable to reset password, please try again later.",
+      "redefinida_senha_com_sucesso": "Reset password successfully!"
+    },
+    "illustrations": {
+      "seguranca_senha": "Illustration of two users, one using a notebook and the other with a protection symbol indicating safe browsing."
+    }
+  }
+}

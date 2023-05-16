@@ -1,0 +1,105 @@
+<div class="p-3 flex h-full w-full justify-content-center align-items-center">
+  <vhp-form-card @fadeAndSlide>
+    <ng-template #illustrationTemplate>
+      <div
+        class="w-full h-full flex flex-column justify-content-between align-items-center"
+      >
+        <div
+          class="w-full flex justify-content-center align-content-center flex-column text-center"
+        >
+          <p class="text-2xl mb-3 font-bold text-left">
+            {{ "cadastro_usuario.labels.registro_novo_usuario" | translate }}
+          </p>
+          <p class="text-lg text-left">
+            {{
+              "cadastro_usuario.descriptions.se_registre_em_nosso_site"
+                | translate
+            }}
+          </p>
+        </div>
+        <div class="w-full">
+          <img
+            class="w-full h-full"
+            src="assets/illustrations/sign-in.svg"
+            [alt]="'cadastro_usuario.illustrations.perfil_usuario' | translate"
+          />
+        </div>
+      </div>
+    </ng-template>
+    <ng-template #formTemplate>
+      <div class="w-full">
+        <form
+          class="grid grid-nogutter"
+          [formGroup]="formGroup"
+          (ngSubmit)="cadastrarUsuario()"
+        >
+          <div class="col-12 mb-3">
+            <p class="text-2xl font-bold">
+              {{ "cadastro_usuario.descriptions.criar_conta" | translate }}
+            </p>
+            <p class="mt-2 text-sm">
+              {{ "cadastro_usuario.descriptions.preencher_campos" | translate }}
+            </p>
+          </div>
+
+          <div class="col-12">
+            <vhp-input
+              label="common.fields.nome.label"
+              type="text"
+              [sufixIcon]="icons.sufixIconUser"
+              formControlName="name"
+              [validations]="validationMessages['name']"
+            ></vhp-input>
+          </div>
+
+          <div class="col-12">
+            <vhp-input
+              label="common.fields.email.label"
+              type="email"
+              [validations]="validationMessages['email']"
+              [sufixIcon]="icons.sufixIconEmail"
+              formControlName="email"
+            ></vhp-input>
+          </div>
+
+          <div class="col-12">
+            <vhp-input-password
+              label="common.fields.senha.label"
+              [feedback]="true"
+              [validations]="validationMessages['password']"
+              formControlName="password"
+            ></vhp-input-password>
+          </div>
+
+          <div class="col-12">
+            <vhp-input-password
+              label="common.fields.confirmar_senha.label"
+              [validations]="validationMessages['confirmPassword']"
+              formControlName="confirmPassword"
+            ></vhp-input-password>
+          </div>
+
+          <div class="col-12">
+            <button
+              class="text-light mt-4 p-button-sm p-button-rounded w-full flex justify-content-center text-md"
+              type="submit"
+              pButton
+              pRipple
+              [disabled]="isFormInvalid || isLoading"
+            >
+              {{ "cadastro_usuario.labels.cadastrar" | translate }}
+            </button>
+          </div>
+        </form>
+        <vhp-anchor class="inline-block mt-5" link="/login">
+          <div class="flex align-items-center">
+            <i class="pi pi-angle-left text-sm"></i>
+            <span class="text-sm">{{
+              "cadastro_usuario.labels.voltar" | translate
+            }}</span>
+          </div>
+        </vhp-anchor>
+      </div>
+    </ng-template>
+  </vhp-form-card>
+</div>

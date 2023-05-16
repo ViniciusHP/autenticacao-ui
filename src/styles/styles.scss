@@ -1,0 +1,22 @@
+@import "./fonts";
+@import "colors";
+@import "breakpoints";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+body,
+.p-component {
+  font-family: "Nunito", sans-serif;
+  color: var(--text-dark);
+}

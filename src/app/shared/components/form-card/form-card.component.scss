@@ -1,0 +1,33 @@
+@import "breakpoints";
+
+:host {
+  display: block;
+  background-color: transparent;
+}
+
+.form-card {
+  &__ilustracao {
+    background-color: var(--primary-normal);
+    color: var(--text-light);
+  }
+  &__form {
+    color: var(--text-dark);
+    position: relative;
+  }
+}
+
+@include medium-screen {
+  .form-card {
+    &__form {
+      &::before {
+        position: absolute;
+        content: "";
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 5px;
+        background-color: var(--primary-normal);
+      }
+    }
+  }
+}

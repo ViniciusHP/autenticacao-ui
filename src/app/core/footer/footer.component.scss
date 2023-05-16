@@ -1,0 +1,14 @@
+:host {
+  display: block;
+  height: 100%;
+  width: 100%;
+
+  background-color: var(--primary-light);
+
+  a {
+    transition: color 0.3s ease;
+    &:hover {
+      color: var(--primary-dark);
+    }
+  }
+}

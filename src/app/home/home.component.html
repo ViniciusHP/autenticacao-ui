@@ -1,0 +1,43 @@
+<div
+  class="w-full h-full p-2 md:p-8 grid grid-nogutter justify-content-center align-items-center"
+>
+  <div
+    @fadeAndSlide
+    class="w-full p-2 sm:p-5 col-12 lg:col-8 xl:col-6 h-full flex flex-column justify-content-center align-items-center"
+  >
+    <div class="home__container-ilustracao">
+      <img
+        class="block w-full h-full"
+        src="./assets/illustrations/bonfire.svg"
+        [alt]="'home.illustrations.bem_vindo' | translate"
+      />
+    </div>
+    <div class="home__descricao text-center mt-3">
+      <p class="text-2xl font-bold">
+        {{
+          "home.descriptions.seja_bem_vindo" | translate : { usuario: username }
+        }}
+      </p>
+
+      <div class="mt-5 flex justify-content-center">
+        <button
+          class="text-light mt-4 p-button-sm p-button-rounded w-full flex justify-content-center text-md"
+          type="button"
+          pButton
+          pRipple
+          [disabled]="$isLoading | async"
+          (click)="sair()"
+        >
+          <i
+            *ngIf="$isLoading | async; else btn"
+            class="pi pi-spin pi-spinner"
+          ></i>
+
+          <ng-template #btn>
+            <span>{{ "home.labels.sair" | translate }}</span>
+          </ng-template>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,6 @@
+<ng-template ngFor [ngForOf]="errors" let-error>
+  <span class="error-message-field flex align-items-center">
+    <i class="text-sm mr-1" [ngClass]="icons.error"></i>
+    <small [id]="error.id">{{ error.validationMessage | translate }}</small>
+  </span>
+</ng-template>

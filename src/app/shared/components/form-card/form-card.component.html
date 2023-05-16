@@ -1,0 +1,16 @@
+<div
+  class="bg-white grid grid-nogutter w-full h-full form-card border-round-xl overflow-hidden shadow-2"
+>
+  <div class="hidden md:flex md:col-6 lg:col-7 p-3">
+    <div
+      class="form-card__ilustracao w-full h-full flex p-5 border-round-xl overflow-hidden"
+    >
+      <ng-container [ngTemplateOutlet]="illustrationTemplate"></ng-container>
+    </div>
+  </div>
+  <div
+    class="form-card__form col-12 p-5 md:col-6 lg:col-5 lg:p-7 flex align-items-center"
+  >
+    <ng-container [ngTemplateOutlet]="formTemplate"></ng-container>
+  </div>
+</div>

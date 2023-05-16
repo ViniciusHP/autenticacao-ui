@@ -1,0 +1,131 @@
+{
+  "cadastro_usuario": {
+    "labels": {
+      "registro_novo_usuario": "Registro de novo usuário",
+      "cadastrar": "Cadastrar",
+      "voltar": "Voltar"
+    },
+    "descriptions": {
+      "criar_conta": "Criar conta",
+      "erro_cadastro_usuario": "Erro ao cadastrar usuário!",
+      "preencher_campos": "Preencha os campos a seguir para criar conta.",
+      "se_registre_em_nosso_site": "Se registre em nosso site para desfrutar de todas funcionalidades.",
+      "usuario_cadastrado_com_sucesso": "Usuário cadastrado com sucesso!"
+    },
+    "illustrations": {
+      "perfil_usuario": "Ilustração de usuário exibindo seu perfil."
+    }
+  },
+  "common": {
+    "fields": {
+      "email": {
+        "label": "Email",
+        "validations": {
+          "required": "Insira seu email para entrar em sua conta.",
+          "email": "Insira um email válido.",
+          "emailDisponivel": "O email informado não está disponível."
+        }
+      },
+      "senha": {
+        "label": "Senha",
+        "prompt": "Insira uma senha.",
+        "weight": {
+          "weak": "Senha fraca.",
+          "medium": "Senha média.",
+          "strong": "Senha forte."
+        },
+        "validations": {
+          "required": "Insira a sua senha."
+        }
+      },
+      "nome": {
+        "label": "Nome",
+        "validations": {
+          "required": "Insira seu nome de usuário."
+        }
+      },
+      "confirmar_senha": {
+        "label": "Confirmar senha",
+        "validations": {
+          "required": "Confirme a sua senha.",
+          "confirmacaoSenha": "Confirmação de senha diferente da senha inserida."
+        }
+      }
+    }
+  },
+  "footer": {
+    "descriptions": {
+      "desenvolvido_por": "Desenvolvido por"
+    }
+  },
+  "home": {
+    "labels": {
+      "sair": "Sair"
+    },
+    "descriptions": {
+      "seja_bem_vindo": "Seja bem vindo {{usuario}}!",
+      "ocorreu_erro_deslogar": "Ocorreu um erro ao finalizar sessão."
+    },
+    "illustrations": {
+      "bem_vindo": "Ilustração pessoa tocando violão em acampamento, com montanhas no horizonte e céu estrelado"
+    }
+  },
+  "login": {
+    "labels": {
+      "cadastre_se": "Cadastre-se!",
+      "entrar": "Entrar",
+      "form_title": "Olá, seja bem vindo!",
+      "illustration_title": "Login",
+      "login_efetuado": "Login efetuado"
+    },
+    "descriptions": {
+      "bem_vindo_usuario": "Seja bem vindo {{usuario}}",
+      "esqueceu_senha": "Esqueceu sua senha?",
+      "form_description": "Preencha seus dados para entrar.",
+      "illustration_description": "Acompanhe seu ritmo financeiro em tempo real de qualquer lugar.",
+      "nao_possui_conta": "Não possui conta?",
+      "ocorreu_erro_login": "Ocorreu um erro ao efetuar login.",
+      "usuario_senha_invalidos": "Usuário e/ou senha inválidos!"
+    },
+    "illustrations": {
+      "carteira": "Ilustração de cliente visualizando suas finanças em forma de gráficos, com calculadora e documentos ao lado."
+    }
+  },
+  "pagina_nao_encontrada": {
+    "labels": {
+      "pagina_inicial": "Página Inicial"
+    },
+    "descriptions": {
+      "pagina_nao_existe": "A página que você tentou acessar não existe!",
+      "retorne_para_pagina_inicial": "Por favor, retorne para a página inicial."
+    },
+    "illustrations": {
+      "nao_encontrado": "Ilustração de homem perdido, com placa escrito 404"
+    }
+  },
+  "recuperar_senha": {
+    "labels": {
+      "recuperacao_senha": "Recuperação de senha",
+      "solicitacao_recuperacao_senha": "Solicitação de recuperação de senha"
+    },
+    "descriptions": {
+      "email_recuperacao_enviado": "Será enviado um email com instruções de recuperação de senha para {{email}}.",
+      "instrucoes_solicitacao_recuperacao_senha": "Para solicitar a recuperação de senha, é necessário nos informar o email de cadastrado para que possamos enviar um email de recuperação de senha.",
+      "nao_foi_possivel_solicitar_recuperacao_senha": "Não foi possível solicitar a recuperação de senha, tente mais tarde.",
+      "nunca_pediremos_sua_senha": "Nós nunca entraremos em contato pedindo sua senha, nunca compartilhe sua senha."
+    },
+    "illustrations": {
+      "preencher_formulario": "Ilustração de cliente preenchendo formulário."
+    }
+  },
+  "redefinir_senha": {
+    "labels": {},
+    "descriptions": {
+      "nao_foi_possivel_redefinir_senha": "Não foi possível redefinir senha, tente mais tarde.",
+      "redefinida_senha_com_sucesso": "Redefinida a senha com sucesso!"
+    },
+    "illustrations": {
+      "seguranca_senha": "Ilustração de dois usuários, um usando um notebook e outro com um símbolo de proteção, indicando navegação com segurança."
+    }
+  }
+}

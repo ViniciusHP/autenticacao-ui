@@ -1,0 +1,19 @@
+<a
+  *ngIf="isButton; else anchorText"
+  class="anchor-button p-button-sm p-button-rounded"
+  [routerLink]="link"
+  pButton
+  pRipple
+>
+  <ng-container [ngTemplateOutlet]="content"></ng-container>
+</a>
+
+<ng-template #anchorText>
+  <a class="anchor-text" [routerLink]="link"
+    ><ng-container [ngTemplateOutlet]="content"></ng-container
+  ></a>
+</ng-template>
+
+<ng-template #content>
+  <ng-content></ng-content>
+</ng-template>

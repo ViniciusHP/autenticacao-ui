@@ -1,0 +1,35 @@
+<div
+  class="pagina-nao-econtrada__bg w-full h-full p-2 md:p-8 grid grid-nogutter justify-content-center align-items-center"
+>
+  <div
+    @fadeAndSlide
+    class="w-full p-2 sm:p-5 col-12 lg:col-8 xl:col-6 h-full flex flex-column justify-content-center align-items-center"
+  >
+    <div class="pagina-nao-econtrada__container-ilustracao">
+      <img
+        class="block w-full"
+        src="assets/illustrations/404-not-found.svg"
+        [alt]="
+          'pagina_nao_encontrada.illustrations.pagina_nao_encontrada'
+            | translate
+        "
+      />
+    </div>
+    <div class="pagina-nao-econtrada__descricao text-center mt-3">
+      <p class="text-2xl font-bold">
+        {{ "pagina_nao_encontrada.descriptions.pagina_nao_existe" | translate }}
+      </p>
+      <p class="font-light">
+        {{
+          "pagina_nao_encontrada.descriptions.retorne_para_pagina_inicial"
+            | translate
+        }}
+      </p>
+      <div class="mt-5 flex justify-content-center">
+        <vhp-anchor link="/" type="button">{{
+          "pagina_nao_encontrada.labels.pagina_inicial" | translate
+        }}</vhp-anchor>
+      </div>
+    </div>
+  </div>
+</div>
