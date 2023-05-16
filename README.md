@@ -21,7 +21,7 @@
 
 ## **Sobre o projeto**
 
-Front-end desenvolvido em Angular para consumo da API desenvolvida em Spring Boot para autenticação e cadastro de usuários.
+Front-end desenvolvido em Angular para consumo da API desenvolvida em Spring Boot para autenticação e cadastro de usuários. Repositório do API: https://github.com/ViniciusHP/autenticacao-api
 
 ## **Executando o projeto**
 
